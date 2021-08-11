@@ -1,4 +1,4 @@
-" located in ~/.config/nvim/init.vim
+" located in ~/.vimrc
 
 " Spaces & Tabs {{{
 set tabstop=4       " number of visual spaces per TAB
