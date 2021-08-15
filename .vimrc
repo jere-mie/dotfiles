@@ -16,8 +16,7 @@ set backspace=indent,eol,start  " fixes issues with backspace not working
 
 " this fixes issues with CTRL-arrow keys in tmux and screen
 if &term == "screen"
-    map <esc>[1;5D <C-Left>
-    map <esc>[1;5C <C-Right>
+    set term=xterm
 endif
 
 " plugins go here
