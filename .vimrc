@@ -14,6 +14,11 @@ set incsearch                   " incremental search
 set whichwrap+=<,>,h,l,[,]      " allows for using h, l, and arrow keys to line wrap
 set backspace=indent,eol,start  " fixes issues with backspace not working
 
+" this fixes issues with CTRL-arrow keys in tmux and screen
+if &term == "screen"
+    map <esc>[1;5D <C-Left>
+    map <esc>[1;5C <C-Right>
+endif
 
 " plugins go here
 " Install plugins with ":PlugInstall" after adding them here
