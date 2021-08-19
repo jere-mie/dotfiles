@@ -14,7 +14,7 @@ set incsearch                   " incremental search
 set whichwrap+=<,>,h,l,[,]      " allows for using h, l, and arrow keys to line wrap
 set backspace=indent,eol,start  " fixes issues with backspace not working
 
-color slate                     " nicer colours
+color pablo                     " nicer colours
 
 " this fixes issues with CTRL-arrow keys in tmux and screen
 if &term == "screen"
