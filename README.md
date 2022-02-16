@@ -6,14 +6,20 @@ Currently this only contains my Vim config, but I will likely update it in the f
 
 What is each file?
 
-- .vimrc
-  - this file is an outdated version of my vim config. It works if a very minimal vim config is needed
-- init.vim
-  - this file is for a neovim config. It basically just automatically pulls from `.vimrc`
 - my_configs.vim
   - this is my main vim config, and the most up to date
+  - located in `~/.vim_runtime/my_configs.vim`
   - it is a customization of [The Ultimate Vimrc](https://github.com/amix/vimrc.git)
   - note that nodejs is required for coc to run
+- init.vim
+  - this file is for a neovim config. It basically just automatically pulls from `.vimrc`
+  - located in `~/.config/nvim/init.vim`
+  - to install this, run this command:  
+  `curl -fLo ~/.config/nvim/init.vim --create-dirs https://raw.githubusercontent.com/jere-mie/dotfiles/main/init.vim`
+  - if you're going to be using `my_configs.vim` with neovim, I recommend following the normal instructions for `my_configs.vim` that I wrote below, and then simply using this `init.vim` file to make neovim look at the config
+- .vimrc
+  - this file is an **outdated version** of my vim config. It works if a very minimal vim config is needed, though I personally recommend going with `my_configs.vim`
+  - located in `~/.vimrc`
 
 ## Setting up my_configs.vim
 
