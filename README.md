@@ -30,7 +30,9 @@ curl -fLo ~/.vim_runtime/my_configs.vim --create-dirs https://raw.githubusercont
 
 ### Installing Plugins
 
-After installing, you'll need to open vim and run `:PlugInstall`. After that, you'll need to open vim one more time, and coc should install all the necessary language servers.
+After installing, you'll need to open vim and run `:PlugInstall`.  
+After that, you'll need to open vim one more time, and coc should install all the necessary language servers. **Note*: you may need to open vim up 2-3 times for coc to stop installing things.  
+If you're going to be writing C and C++ files, run `:CocCommand clangd.install`
 
 ### Installing Node
 
