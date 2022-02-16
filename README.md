@@ -56,3 +56,13 @@ nvm use latest
 #### Installing nvm on Windows
 
 Follow [these directions](https://github.com/coreybutler/nvm-windows#installation--upgrades)
+
+## Updating my_configs.vim
+
+Simply replace the old my_configs.vim with the newest one on GitHub:
+
+```sh
+curl -fLo ~/.vim_runtime/my_configs.vim --create-dirs https://raw.githubusercontent.com/jere-mie/dotfiles/main/my_configs.vim # download my custom vimrc
+```
+
+**Note**: You may need to re-run `:PlugInstall` and also re-open vim a couple of times to allow coc to download all of the language servers
