@@ -1,6 +1,4 @@
 #!/bin/bash
-a=$1
-tmp=${a%.*}
-gcc $tmp.c -o $tmp
-./$tmp
-rm $tmp 
+gcc $1 -o $1.out
+./$1.out
+rm $1.out
