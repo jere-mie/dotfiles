@@ -34,6 +34,12 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 curl -fLo ~/.vim_runtime/my_configs.vim --create-dirs https://raw.githubusercontent.com/jere-mie/dotfiles/main/my_configs.vim # download my custom vimrc
 ```
 
+Or run this to do the above in one step:
+
+```sh
+curl -o- https://raw.githubusercontent.com/jere-mie/dotfiles/main/install.sh | bash
+```
+
 ### Installing Plugins
 
 After installing, you'll need to open vim and run `:PlugInstall`.  
