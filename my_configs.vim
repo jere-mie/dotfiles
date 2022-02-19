@@ -9,7 +9,9 @@
 " command for vim plug on neovim
 " sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
+" misc
 set number
+let asmsyntax="masm"
 
 set whichwrap+=<,>,h,l,[,]      " allows for using h, l, and arrow keys to line wrap
 set backspace=indent,eol,start  " fixes issues with backspace not working
