@@ -55,8 +55,8 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 Then install and use the version of node you want
 
 ```sh
-nvm install latest
-nvm use latest
+nvm install stable
+nvm use stable
 ```
 
 #### Installing nvm on Windows
