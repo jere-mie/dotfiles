@@ -10,5 +10,6 @@
         pkgs.neovim
         pkgs.man
         pkgs.wine
+        pkgs.htop
     ];
 }
