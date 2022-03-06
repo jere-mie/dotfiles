@@ -1,6 +1,18 @@
 # Dotfiles
 
-Currently this only contains my Vim config, but I will likely update it in the future to include more.
+Currently this only contains my Vim config, but I will likely update it in the future to include more.  
+
+**Just want my vim config?** Run this:
+
+```sh
+curl -o- https://raw.githubusercontent.com/jere-mie/dotfiles/main/install-vimrc.sh | bash
+```
+
+Or, if you don't have node installed, run this:
+
+```sh
+curl -o- https://raw.githubusercontent.com/jere-mie/dotfiles/main/install-vimrc-and-node.sh | bash
+```
 
 ## Files
 
@@ -37,7 +49,13 @@ curl -fLo ~/.vim_runtime/my_configs.vim --create-dirs https://raw.githubusercont
 Or run this to do the above in one step:
 
 ```sh
-curl -o- https://raw.githubusercontent.com/jere-mie/dotfiles/main/install.sh | bash
+curl -o- https://raw.githubusercontent.com/jere-mie/dotfiles/main/install-vimrc.sh | bash
+```
+
+Don't have node installed? Run this instead of the above: 
+
+```sh
+curl -o- https://raw.githubusercontent.com/jere-mie/dotfiles/main/install-vimrc-and-node.sh | bash
 ```
 
 ### Installing Plugins
