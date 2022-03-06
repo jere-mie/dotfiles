@@ -3,12 +3,6 @@ sudo apt update
 sudo apt upgrade
 sudo apt install gcc python3 python3-pip wget htop vim git screen dnsutils tmux make
 
-# installing nvm
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-source ~/.bashrc
-nvm install stable
-nvm use stable
-
 # vim config
 curl -o- https://raw.githubusercontent.com/jere-mie/dotfiles/main/install-vimrc.sh | bash
 

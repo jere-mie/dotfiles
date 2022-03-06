@@ -8,12 +8,6 @@ Currently this only contains my Vim config, but I will likely update it in the f
 curl -o- https://raw.githubusercontent.com/jere-mie/dotfiles/main/install-vimrc.sh | bash
 ```
 
-Or, if you don't have node installed, run this:
-
-```sh
-curl -o- https://raw.githubusercontent.com/jere-mie/dotfiles/main/install-vimrc-and-node.sh | bash
-```
-
 ## Files
 
 What is each file?
@@ -50,12 +44,6 @@ Or run this to do the above in one step:
 
 ```sh
 curl -o- https://raw.githubusercontent.com/jere-mie/dotfiles/main/install-vimrc.sh | bash
-```
-
-Don't have node installed? Run this instead of the above: 
-
-```sh
-curl -o- https://raw.githubusercontent.com/jere-mie/dotfiles/main/install-vimrc-and-node.sh | bash
 ```
 
 ### Installing Plugins
