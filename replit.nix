@@ -1,5 +1,6 @@
 { pkgs }: {
     deps = [
+        pkgs.cowsay
         pkgs.jdk11
         pkgs.tmux
         pkgs.wget
