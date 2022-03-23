@@ -13,6 +13,7 @@
 set number
 let asmsyntax="masm"
 set mouse=a
+set splitbelow
 
 set whichwrap+=<,>,h,l,[,]      " allows for using h, l, and arrow keys to line wrap
 set backspace=indent,eol,start  " fixes issues with backspace not working
