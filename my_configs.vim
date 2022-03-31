@@ -48,6 +48,8 @@ map <c-t> :term<CR>
 let g:NERDTreeWinPos = "left"
 map <c-b> :NERDTreeToggle<CR>
 
+map <c-p> :CtrlP<CR>
+
 " plugins go here
 " Install plugins with ":PlugInstall" after adding them here
 
@@ -55,6 +57,9 @@ call plug#begin('~/.vim/plugged')
 
 " Plug 'junegunn/vim-easy-align'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" CtrlP fuzzy file finder
+Plug 'https://github.com/ctrlpvim/ctrlp.vim'
 
 " Initialize plugin system
 call plug#end()
