@@ -27,6 +27,7 @@ let asmsyntax="masm"
 set mouse=a
 set ttymouse=sgr
 set splitbelow
+set scrolloff=4
 
 set whichwrap+=<,>,h,l,[,]      " allows for using h, l, and arrow keys to line wrap
 set backspace=indent,eol,start  " fixes issues with backspace not working
@@ -40,6 +41,12 @@ endif
 " NOTE: <leader> is the comma key: ','
 map <leader>tt :tabn " go to next tab
 map <leader>tr :tabp " go to previous tab
+
+map <c-t> :term<CR>
+
+" NERDTree
+let g:NERDTreeWinPos = "left"
+map <c-b> :NERDTreeToggle<CR>
 
 " plugins go here
 " Install plugins with ":PlugInstall" after adding them here
