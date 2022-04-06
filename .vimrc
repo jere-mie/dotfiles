@@ -47,6 +47,8 @@ map <c-t> :term<CR>
 " NERDTree
 let g:NERDTreeWinPos = "left"
 map <c-b> :NERDTreeToggle<CR>
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
 
 " CtrlP opens by ctrl-p
 map <c-p> :CtrlP<CR>
@@ -86,8 +88,8 @@ Plug 'https://github.com/ctrlpvim/ctrlp.vim'
 " Nerdtree is nicer file explorer
 Plug 'preservim/nerdtree'
 
-" color scheme
-Plug 'wadackel/vim-dogrun'
+" colorscheme
+Plug 'crucerucalin/peaksea.vim'
 
 " Initialize plugin system
 call plug#end()
@@ -110,13 +112,13 @@ let g:coc_global_extensions = [
 
 " use 256 colors when possible
 if has('gui_running') || (&term =~? 'mlterm\|xterm\|xterm-256\|screen-256')
-    if !has('gui_running')
-        let &t_Co = 256
-    endif
-    colorscheme dogrun
-else
-    colorscheme evening 
+    let &t_Co = 256
 endif
+set background=dark
+colorscheme peaksea
+
+" remove ugly vertical lines on window division
+set fillchars+=vert:\ 
 
 " nicer colors
 highlight DiffAdd           cterm=bold ctermbg=none ctermfg=119
@@ -125,7 +127,32 @@ highlight DiffChange        cterm=bold ctermbg=none ctermfg=227
 highlight SignifySignAdd    cterm=bold ctermbg=237  ctermfg=119
 highlight SignifySignDelete cterm=bold ctermbg=237  ctermfg=167
 highlight SignifySignChange cterm=bold ctermbg=237  ctermfg=227
+highlight VertSplit guibg=#333333 guifg=Black ctermbg=6 ctermfg=0
 
 if (has("termguicolors"))
     set termguicolors
 endif
+
+" statusline
+set statusline=
+set statusline+=%#DiffAdd#%{(mode()=='n')?'\ \ NORMAL\ ':''}
+set statusline+=%#DiffChange#%{(mode()=='i')?'\ \ INSERT\ ':''}
+set statusline+=%#DiffDelete#%{(mode()=='r')?'\ \ RPLACE\ ':''}
+set statusline+=%#Cursor#%{(mode()=='v')?'\ \ VISUAL\ ':''}
+set statusline+=\ %n\           " buffer number
+set statusline+=%#Visual#       " colour
+set statusline+=%{&paste?'\ PASTE\ ':''}
+set statusline+=%{&spell?'\ SPELL\ ':''}
+set statusline+=%#CursorIM#     " colour
+set statusline+=%R                        " readonly flag
+set statusline+=%M                        " modified [+] flag
+set statusline+=%#Cursor#               " colour
+set statusline+=%#CursorLine#     " colour
+set statusline+=\ %t\                   " short file name
+set statusline+=%=                          " right align
+set statusline+=%#CursorLine#   " colour
+set statusline+=\ %Y\                   " file type
+set statusline+=%#CursorIM#     " colour
+set statusline+=\ %3l:%-2c\         " line + column
+set statusline+=%#Cursor#       " colour
+set statusline+=\ %3p%%\                " percentage
