@@ -1,10 +1,10 @@
 # basic install stuff
 sudo apt update
 sudo apt upgrade
-sudo apt install gcc python3 python3-pip wget htop vim git screen dnsutils tmux make
+sudo apt install gcc python3 python3-pip wget htop vim git screen dnsutils tmux make curl
 
 # vim config
-curl -o- https://raw.githubusercontent.com/jere-mie/dotfiles/main/install-vimrc.sh | bash
+curl -o- https://raw.githubusercontent.com/jere-mie/dotfiles/main/scripts/install-vimrc.sh | bash
 
 # installing caddy
 sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https
