@@ -2,6 +2,7 @@
 set whichwrap+=<,>,h,l,[,]      " allows for using h, l, and arrow keys to line wrap
 set backspace=indent,eol,start  " fixes issues with backspace not working
 let asmsyntax="masm"            " MASM syntax highlighting for .asm files
+set mouse=a                     " mouse support
 set ttymouse=sgr                " better mouse support over ssh
 set splitbelow                  " new tabs at bottom (such as)
 set scrolloff=3                 " always show at least 3 lines when scrolling down
