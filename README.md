@@ -6,6 +6,14 @@
 curl -o- https://raw.githubusercontent.com/jere-mie/dotfiles/main/scripts/install-vimrc.sh | bash
 ```
 
+## Minimal Vimrc
+
+A more minimal vim config without plugins can be installed by running:
+
+```bash
+curl -fLo ~/.vimrc https://raw.githubusercontent.com/jere-mie/dotfiles/main/.vimrc-minimal
+```
+
 ## Setting up Vimrc
 
 ### Install Scripts
