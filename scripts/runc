@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 gcc $1 -o $1.out
 ./$1.out
 rm $1.out

@@ -1,3 +1,4 @@
+#!/bin/sh
 # basic install stuff
 sudo apt update
 sudo apt upgrade
