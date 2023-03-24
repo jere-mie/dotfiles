@@ -8,7 +8,7 @@ set splitbelow                  " new tabs at bottom (such as)
 set scrolloff=3                 " always show at least 3 lines when scrolling down
 let fancy_symbols_enabled = 1
 set encoding=utf-8
-set termguicolors
+" set termguicolors
 
 " this fixes issues with CTRL-arrow keys in tmux and screen
 if &term == "screen"
