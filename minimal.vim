@@ -78,6 +78,9 @@ else
     set shell=/bin/sh
 endif
 
+" no numbers when opening term
+autocmd TerminalOpen * setlocal nonumber norelativenumber
+
 " session management
 let g:session_directory = "~/.vim/session"
 let g:session_autoload = "no"
