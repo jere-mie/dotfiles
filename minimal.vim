@@ -16,6 +16,10 @@ if &term == "screen"
     set term=xterm
 endif
 
+" changing cursor to be a line in insert mode
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[2 q"
+
 " tab navigation mappings
 map tt :tabnew 
 map <M-Right> :tabn<CR>
