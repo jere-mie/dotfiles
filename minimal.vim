@@ -50,19 +50,21 @@ imap <C-v> <Esc>pi
 imap <C-g> <Esc>pi
 imap <C-z> <Esc>ui
 
-" indentations and brackets
+" indentations
 set autoindent     " Automatically indent new lines
 set smartindent    " Automatically adjust indentation in some cases
 set showmatch      " Highlight matching brackets
+
+" brackets and quotes
 set matchpairs+=<:>
 set matchpairs+=(:)
 set matchpairs+=[:]
 set matchpairs+={:}
-inoremap " ""<left>
-inoremap ' ''<left>
-inoremap ( ()<left>
-inoremap [ []<left>
-inoremap { {}<left>
+" inoremap " ""<left>
+" inoremap ' ''<left>
+" inoremap ( ()<left>
+" inoremap [ []<left>
+" inoremap { {}<left>
 
 
 "" Encoding
