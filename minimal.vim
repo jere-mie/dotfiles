@@ -55,6 +55,12 @@ set autoindent     " Automatically indent new lines
 set smartindent    " Automatically adjust indentation in some cases
 set showmatch      " Highlight matching brackets
 
+" shift-tab
+" for command mode
+nnoremap <S-Tab> <<
+" for insert mode
+inoremap <S-Tab> <C-d>
+
 " brackets and quotes
 set matchpairs+=<:>
 set matchpairs+=(:)
